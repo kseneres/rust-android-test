@@ -6,8 +6,13 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 
 class Rusty(context: ReactApplicationContext) : ReactContextBaseJavaModule(context) {
-    fun loadRustyLib() {
-        System.loadLibrary("rust")
+
+    private external fun hello(name: String): String
+
+    companion object {
+        init {
+            System.loadLibrary("rust")
+        }
     }
 
     override fun getName(): String {
@@ -19,6 +24,4 @@ class Rusty(context: ReactApplicationContext) : ReactContextBaseJavaModule(conte
         val response = hello(name)
         promise.resolve(response)
     }
-
-    private external fun hello(name: String): String
 }
