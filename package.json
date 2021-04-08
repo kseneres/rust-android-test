@@ -8,5 +8,13 @@
   "license": "MIT",
   "devDependencies": {
     "react-native": "0.61.5"
-  }
+  },
+  "files": [
+    "package.json",
+    "index.js",
+    "index.d.ts",
+    "android/src/*",
+    "android/rust/*",
+    "android/build.gradle"
+  ]
 }
