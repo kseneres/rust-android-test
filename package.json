@@ -1,0 +1,12 @@
+{
+  "name": "rust-android-test",
+  "version": "0.0.1",
+  "description": "React Native Module built with Rust",
+  "main": "index.js",
+  "repository": "git@github.com:kseneres/rust-android-test.git",
+  "author": "Kent Seneres <kseneres@medrhythms.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "react-native": "0.61.5"
+  }
+}
